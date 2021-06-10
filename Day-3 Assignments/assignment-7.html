@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+   <h2>Your favourite actor:</h2>
+   <input type="checkbox" id="suriya" value="suriya" />Suriya
+   <input type="checkbox" id="nani" value="nani" />Nani<br></br>
+   <button onclick="readData()">Submit</button>
+   <p id="result"></p>
+   <script>
+   	   function readData() {
+   	   	 var suriya=document.getElementById('suriya');
+   	   	 var nani=document.getElemenetById('nani');
+   	   	 var res;
+   	   	 if (suriya.checked==true&&nani.checked==true){
+   	   	 	res='Suriya,Nani';
+   	   	 	
+   	   	 } else if(suriya.checked==false&&nani.checked==true){
+   	   	 	res='Nani only';
+   	   	 	
+   	   	 } else if(suriya.checked==true&&nani.checked==false){
+   	   	 	res='Suriya only';
+   	   	 } else{
+   	   	 	res='None';
+   	   	 	}
+   	   	 document.getElementById('result').innerHTML=res;
+   	   }
+   </script>
+</body>
+</html>

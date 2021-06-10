@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+    <label>Enter your favourite food items</label>
+    
+    <select id="fooditems">
+    	<option>Chicken biryani</option>
+    	<option>Mutton biryani</option>
+    	<option>prawn biryani</option>
+    	<option>fried-piece biryani</option>
+    	<option>veg biryani</option>
+    </select>
+   
+    <button onclick="readData()">Submit</button>
+    <p id="result"></p>
+    <script>
+    	function readData(){
+    		var f=document.getElementById('fooditems').value;
+    		document.getElementById('result').innerHTML=f;
+    	}
+    </script>
+</body>
+</html>

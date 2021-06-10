@@ -1,0 +1,42 @@
+<!--field set tag demo-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <fieldset id="abc">
+    	<legend>Details</legend>
+    	Name: <input type="text" id="name" required /><br></br>
+    	Aadhar No:<input type="tel" id="aadhar" /><br></br>
+    	Address:<input type="text" id="address" /><br></br>
+    	<button onclick="readData()">Submit</button>
+    </fieldset><br></br>
+    <h1>Result Table</h1>
+    <table border="1">
+    	<tr>
+    		<th>Name</th>
+    		<th>AadharNo</th>
+            <th>Address</th>
+    	</tr>
+    	<tr>
+    		<td id="abc"></td>
+    		<td id="123"></td>
+            <td id="indu"></td>
+    	</tr>
+    
+    </table>
+    <script>
+    	function readData(){
+    		var name=document.getElementById('name').val;
+    		var aadhar=document.getElementById('aadhar').val;
+            var address=document.getElementById('address').val;
+
+    		 document.getElementById('abc').innerHTML=name;
+    		 document.getElementById('123').innerHTML=aadhar;
+             document.getElementById('indu').inneHTML=address;
+
+    	}
+    </script>
+
+</body>
+</html>
